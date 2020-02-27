@@ -1,0 +1,38 @@
+body {
+  background: #fff;
+  color: #333;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+#container {
+  width: 50%;
+  height: 900px;
+  float: left;
+}
+
+.bar-chart-container {
+  width: 100%;
+}
+
+.two-chart-container {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.donut-chart-container {
+  width: 25%;
+  margin-top: 5%;
+  margin-left: 5%;
+  float: left;
+}
+
+.line-chart-container {
+  width: 50%;
+  margin-top: 15%;
+  float: right;
+}

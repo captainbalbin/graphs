@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://naver.github.io/billboard.js/release/latest/dist/billboard.css"
+    />
+    <!-- import the webpage's javascript files -->
+    <script src="/script.js" defer></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://naver.github.io/billboard.js/release/1.11.0/dist/billboard.min.js"></script>
+    <script src="/script_billboard.js"></script>
+    <script src="/script_d3.js"></script>
+    <script src="/script_data.js" defer></script>
+  </head>
+  <body>
+    <h3 style="text-align: center; padding: 10px">
+      How childbirths and population growths correlate for the country of
+      Nigeria
+    </h3>
+
+    <div id="sketch1">
+      <div id="data1_overlay" class="html_overlay">
+        <div id="data1_chart"></div>
+        <button onclick="zoomIn()">1990 details</button>
+        <button onclick="zoomOut()">Reset</button>
+      </div>
+      <!--
+      <div id="data2_overlay" class="html_overlay">
+        <div id="data2_chart"></div>
+      </div>
+    --></div>
+    <!-- End of poster -->
+    <!-- include the Glitch button to show what the webpage is about and
+to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position:fixed;top:20px;right:20px;z-index:2"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
