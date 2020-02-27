@@ -3,6 +3,8 @@ var year = [],
   girls = [];
 
 function loadData(callback, path) {
+  console.log('loading data into graph');
+
   d3.csv(path, function(csv) {
     csv.map(function(d) {
       year.push(d.year);
@@ -11,25 +13,38 @@ function loadData(callback, path) {
     });
     callback();
   });
+
+  console.log('datasets: ', year, boys, girls);
 }
 
 function emptyArray() {
-  boys = [];
-  girls = [];
-  year = [];
+  console.log('Arrays should not be empty here: ', year, boys, girls);
+
+  boys.splice(0, boys.length);
+  girls.splice(0, girls.length);
+  year.splice(0, year.length);
+  // boys = [];
+  // girls = [];
+  // year = [];
+
+  console.log('the arrays should be empty here: ', year, boys, girls);
 }
 
 function syncGraph(id) {
   console.log('Updating graph with data from ', id);
   if (id == 0) {
     path = 'data/riket.csv';
+
     emptyArray();
 
     loadData(() => {
       drawLineChart();
     }, path);
+
+    console.log('data loaded: ', year, boys, girls);
   } else if (id == 20) {
     path = 'data/VG.csv';
+
     emptyArray();
 
     loadData(() => {
