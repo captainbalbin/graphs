@@ -36,7 +36,7 @@ anychart.onDocumentReady(function() {
   // set click functions
   var changeLineGraph = function(e) {
     var index = e.pointIndex;
-    console.log('pointIndex: ', index);
+
     syncGraph(index);
   };
 

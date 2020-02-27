@@ -4,6 +4,9 @@ var boysData = [];
 var girlsData = [];
 var yearsData = [];
 
+//load the arrays with data
+loadData();
+
 var lineChart = new Chart(ctx, {
   type: 'line',
   data: {
