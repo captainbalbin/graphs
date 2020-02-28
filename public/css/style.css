@@ -24,15 +24,14 @@ canvas {
   table-layout: fixed;
 }
 
+.line-chart-container {
+  width: 50%;
+  margin-top: 15%;
+  float: right;
+}
 .donut-chart-container {
   width: 25%;
   margin-top: 5%;
   margin-left: 5%;
-  float: left;
-}
-
-.line-chart-container {
-  width: 50%;
-  margin-top: 15%;
   float: right;
 }
