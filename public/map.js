@@ -31,7 +31,8 @@ anychart.onDocumentReady(function() {
   // create choropleth series
   var series = map.choropleth(dataSet);
 
-  map.palette(['#C087A2']);
+  map.palette(['#B02768']);
+  map.background().fill('#FCF4ED');
 
   // set click functions
   var changeLineGraph = function(e) {
@@ -45,13 +46,27 @@ anychart.onDocumentReady(function() {
   // set geoIdField to 'id', this field contains in geo data meta properties
   series.geoIdField('id');
 
+  var tooltip = series.tooltip();
+  tooltip.fontColor('#333');
+
+  var title = series.tooltip().title();
+  title.fontColor('#333');
+  title.fontWeight(500);
+
   // set tooltip
   series.tooltip().format(function(e) {
     return 'Boys: ' + e.getData('boys') + '\n' + 'Girls: ' + e.getData('girls');
   });
 
+  // font settings for tooltip text
+
+  series
+    .tooltip()
+    .background('#fff')
+    .fontColor('#333');
+
   // set map color settings
-  series.colorScale(anychart.scales.linearColor('#fff', '#C087A2'));
+  series.colorScale(anychart.scales.linearColor('#fff', '#B02768'));
   series.hovered().fill('#fff');
 
   // set geo data, you can find this map in our geo maps collection

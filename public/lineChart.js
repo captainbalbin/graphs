@@ -28,7 +28,7 @@ function drawLineChart() {
           pointBackgroundColor: 'rgba(192, 135, 162, 1.0)',
           pointHitRadius: 10,
           pointBorderWidth: 5,
-          pointHoverRadius: 5,
+          // pointHoverRadius: 3,
           pointHoverBackgroundColor: 'rgba(192, 135, 162, 1.0)'
         },
         {
@@ -40,7 +40,7 @@ function drawLineChart() {
           pointBackgroundColor: 'rgba(125, 175, 194, 1.0)',
           pointHitRadius: 10,
           pointBorderWidth: 5,
-          pointHoverRadius: 5,
+          // pointHoverRadius: 1,
           pointHoverBackgroundColor: 'rgba(125, 175, 194, 1.0)'
         }
       ]

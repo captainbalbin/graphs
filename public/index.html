@@ -33,10 +33,11 @@
 
     <title>My Website</title>
   </head>
+  <header>
+    <h1>Youth Suicide In Sweden</h1>
+  </header>
   <body>
-    <!-- column -->
-    <div class="column" id="top-container">
-      <!-- row  -->
+    <div class="column">
       <div class="row" id="top-container">
         <div id="people-graphics-image">
           <img src="./img/people_grahpics.svg" />
@@ -46,21 +47,22 @@
           <script src="pieChart.js"></script>
         </div>
       </div>
-    </div>
-    <!-- row 2 -->
-    <div class="row" id="middle-container">
-      <div id="map-chart-container">
-        <script type="text/javascript" src="map.js"></script>
-      </div>
-      <div id="button-container">
-        <button onclick="syncGraph(0), setLabel(0)" id="sweden">
-          Whole Country
-        </button>
-      </div>
 
-      <div id="line-chart-container">
-        <canvas id="lineChart"></canvas>
-        <script src="lineChart.js"></script>
+      <!-- row 2 -->
+      <div class="row" id="middle-container">
+        <div id="map-chart-container">
+          <script type="text/javascript" src="map.js"></script>
+        </div>
+        <div id="button-container">
+          <button onclick="syncGraph(0), setLabel(0)" id="sweden-button">
+            Whole Country
+          </button>
+        </div>
+
+        <div id="line-chart-container">
+          <canvas id="lineChart"></canvas>
+          <script src="lineChart.js"></script>
+        </div>
       </div>
     </div>
 

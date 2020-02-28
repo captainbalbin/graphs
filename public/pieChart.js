@@ -6,12 +6,17 @@ new Chart(document.getElementById('pieChart'), {
       {
         label: 'Suicides (per 100 000)',
         backgroundColor: ['#7DAFC2', '#C087A2'],
-        borderColor: '#eee',
+        borderColor: '#FFF',
         data: [12, 7.38]
       }
     ]
   },
   options: {
+    tooltips: {
+      backgroundColor: '#fff',
+      titleFontColor: '#555',
+      bodyFontColor: '#555'
+    },
     responsive: true,
     maintainAspectRatio: false,
     title: {
