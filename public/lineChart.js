@@ -40,6 +40,10 @@ function drawLineChart() {
       ]
     },
     options: {
+      title: {
+        display: true,
+        text: 'Sweden'
+      },
       responsive: true,
       maintainAspectRatio: false,
       scales: {

@@ -5,7 +5,7 @@ body {
 
 canvas {
   width: 100% !important;
-  height: 600px !important;
+  height: auto !important;
 }
 
 #container {
@@ -26,9 +26,13 @@ canvas {
   float: left;
 }
 
-#lineChart {
-  height: 100%;
+.pie-chart-container {
+  float: left;
+  height: 500px;
+  width: 500px;
+  margin-top: 20px;
 }
+
 .donut-chart-container {
   float: bottom;
 }
