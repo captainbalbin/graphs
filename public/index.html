@@ -35,13 +35,20 @@
   </head>
   <body>
     <div id="container">
-      <script type="text/javascript" src="map.js"></script>
-      <button onclick="syncGraph(0)" id="sweden">Whole Country</button>
+      <div id="map-chart-container">
+        <script type="text/javascript" src="map.js"></script>
+        <button onclick="syncGraph(0)" id="sweden">Whole Country</button>
+      </div>
+
+      <div class="line-chart-container">
+        <canvas id="lineChart"></canvas>
+        <script src="lineChart.js"></script>
+      </div>
     </div>
 
-    <div class="line-chart-container">
-      <canvas id="lineChart"></canvas>
-      <script src="lineChart.js"></script>
-    </div>
+    <!-- <div class="donut-chart-container">
+      <canvas id="donutChart"></canvas>
+      <script src="donutChart.js"></script>
+    </div> -->
   </body>
 </html>

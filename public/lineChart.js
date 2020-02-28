@@ -40,10 +40,14 @@ function drawLineChart() {
       ]
     },
     options: {
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         yAxes: [
           {
-            ticks: {},
+            ticks: {
+              beginAtZero: true
+            },
             gridLines: {
               tickMarkLength: 10
             }

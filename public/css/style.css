@@ -5,33 +5,30 @@ body {
 
 canvas {
   width: 100% !important;
-  height: auto !important;
+  height: 600px !important;
 }
 
 #container {
-  width: 50%;
-  height: 900px;
+  float: left;
+  width: 100%;
+}
+
+#map-chart-container {
+  width: 25%;
+  height: 600px;
   float: left;
 }
 
-.bar-chart-container {
-  width: 100%;
-}
-
-.two-chart-container {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
 .line-chart-container {
+  height: 600px;
   width: 50%;
-  margin-top: 15%;
-  float: right;
+  /* margin-top: 15%; */
+  float: left;
+}
+
+#lineChart {
+  height: 100%;
 }
 .donut-chart-container {
-  width: 25%;
-  margin-top: 5%;
-  margin-left: 5%;
-  float: right;
+  float: bottom;
 }

@@ -59,7 +59,7 @@ anychart.onDocumentReady(function() {
   map.geoData(anychart.maps['sweden']);
 
   //set map container id (div)
-  map.container('container');
+  map.container('map-chart-container');
 
   //initiate map drawing
   map.draw();

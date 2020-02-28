@@ -23,12 +23,12 @@ function emptyArray() {
   girls = [];
   year = [];
 
-  resetCanvas();
+  resetLineChartCanvas();
 }
 
 // Have to remove and add a new canvas not to get multiple canvas generated
 // on top of eachother
-function resetCanvas() {
+function resetLineChartCanvas() {
   $('#lineChart').remove();
   $('.line-chart-container').append('<canvas id="lineChart"><canvas>');
   canvas = document.querySelector('#lineChart');
