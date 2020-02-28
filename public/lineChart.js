@@ -6,6 +6,8 @@ var yearsData = [];
 
 var lineChart;
 var path = 'data/riket.csv';
+var countyLabel = 'National Rate';
+
 //load the arrays with data
 loadData(() => {
   drawLineChart();
@@ -20,29 +22,43 @@ function drawLineChart() {
         {
           label: 'Girls',
           data: getGirls(),
-          backgroundColor: 'rgba(255, 99, 132, 0.5)',
-          borderColor: 'rgba(255, 99, 132, 1.0)',
+          backgroundColor: 'rgba(192, 135, 162, 0.5)',
+          borderColor: 'rgba(192, 135, 162, 1.0)',
+          borderWidth: 5,
+          pointBackgroundColor: 'rgba(192, 135, 162, 1.0)',
           pointHitRadius: 10,
           pointBorderWidth: 5,
           pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(255, 99, 132, 1.0)'
+          pointHoverBackgroundColor: 'rgba(192, 135, 162, 1.0)'
         },
         {
           label: 'Boys',
           data: getBoys(),
-          backgroundColor: 'rgba(1, 99, 132, 0.5)',
-          borderColor: 'rgba(1, 99, 132, 1.0)',
+          backgroundColor: 'rgba(125, 175, 194, 0.5)',
+          borderColor: 'rgba(125, 175, 194, 1.0)',
+          borderWidth: 5,
+          pointBackgroundColor: 'rgba(125, 175, 194, 1.0)',
           pointHitRadius: 10,
           pointBorderWidth: 5,
           pointHoverRadius: 5,
-          pointHoverBackgroundColor: 'rgba(1, 99, 132, 1.0)'
+          pointHoverBackgroundColor: 'rgba(125, 175, 194, 1.0)'
         }
       ]
     },
     options: {
+      tooltips: {
+        backgroundColor: '#fff',
+        titleFontColor: '#555',
+        bodyFontColor: '#555',
+
+        mode: 'index'
+      },
       title: {
         display: true,
-        text: 'Sweden'
+        text:
+          countyLabel +
+          ' - ' +
+          'Number of suicides of youths aged 10-24 (per 100 000)'
       },
       responsive: true,
       maintainAspectRatio: false,
@@ -53,7 +69,7 @@ function drawLineChart() {
               beginAtZero: true
             },
             gridLines: {
-              tickMarkLength: 10
+              tickMarkLength: 20
             }
           }
         ]

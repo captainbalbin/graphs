@@ -31,12 +31,12 @@ anychart.onDocumentReady(function() {
   // create choropleth series
   var series = map.choropleth(dataSet);
 
-  map.palette(['#c81912']);
+  map.palette(['#C087A2']);
 
   // set click functions
   var changeLineGraph = function(e) {
     var index = e.pointIndex;
-
+    setLabel(index);
     syncGraph(index);
   };
 
@@ -51,7 +51,7 @@ anychart.onDocumentReady(function() {
   });
 
   // set map color settings
-  series.colorScale(anychart.scales.linearColor('#fff', '#c81912'));
+  series.colorScale(anychart.scales.linearColor('#fff', '#C087A2'));
   series.hovered().fill('#fff');
 
   // set geo data, you can find this map in our geo maps collection

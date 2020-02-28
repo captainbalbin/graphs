@@ -5,7 +5,7 @@ new Chart(document.getElementById('pieChart'), {
     datasets: [
       {
         label: 'Suicides (per 100 000)',
-        backgroundColor: ['#3e95cd', '#c45850'],
+        backgroundColor: ['#7DAFC2', '#C087A2'],
         borderColor: '#eee',
         data: [12, 7.38]
       }

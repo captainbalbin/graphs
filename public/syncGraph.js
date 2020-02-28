@@ -30,7 +30,7 @@ function emptyArray() {
 // on top of eachother
 function resetLineChartCanvas() {
   $('#lineChart').remove();
-  $('.line-chart-container').append('<canvas id="lineChart"><canvas>');
+  $('#line-chart-container').append('<canvas id="lineChart"><canvas>');
   canvas = document.querySelector('#lineChart');
   ctx = canvas.getContext('2d');
 }
@@ -55,6 +55,14 @@ function syncGraph(id) {
     loadData(() => {
       drawLineChart();
     }, path);
+  } else if (id == 13) {
+    path = 'data/NB.csv';
+
+    emptyArray();
+
+    loadData(() => {
+      drawLineChart();
+    }, path);
   }
 }
 
@@ -68,4 +76,18 @@ function getBoys() {
 
 function getGirls() {
   return girls;
+}
+
+function setLabel(index) {
+  console.log('Received indx: ', index);
+  if (index == 20) {
+    countyLabel = 'Västra Götaland';
+    console.log('Setting label: ', countyLabel);
+  } else if (index == 0) {
+    countyLabel = 'National Rate';
+    console.log('Setting label: ', countyLabel);
+  } else if (index == 13) {
+    countyLabel = 'Norrland';
+    console.log('Setting label: ', countyLabel);
+  }
 }

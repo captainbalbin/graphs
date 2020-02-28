@@ -8,29 +8,33 @@ canvas {
   height: auto !important;
 }
 
-#container {
-  float: left;
-  width: 100%;
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #map-chart-container {
   width: 25%;
-  height: 600px;
-  float: left;
 }
 
-.line-chart-container {
-  height: 600px;
+#button-container {
+}
+
+#line-chart-container {
   width: 50%;
-  /* margin-top: 15%; */
-  float: left;
 }
 
-.pie-chart-container {
-  float: left;
-  height: 500px;
-  width: 500px;
-  margin-top: 20px;
+#pie-chart-container {
+  height: 300px;
+  width: 300px;
 }
 
 .donut-chart-container {
