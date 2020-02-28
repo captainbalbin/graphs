@@ -17,17 +17,22 @@ function loadData(callback, path) {
   console.log('datasets: ', year, boys, girls);
 }
 
+// Emprt arrays to make room for new data
 function emptyArray() {
-  console.log('Arrays should not be empty here: ', year, boys, girls);
+  boys = [];
+  girls = [];
+  year = [];
 
-  boys.splice(0, boys.length);
-  girls.splice(0, girls.length);
-  year.splice(0, year.length);
-  // boys = [];
-  // girls = [];
-  // year = [];
+  resetCanvas();
+}
 
-  console.log('the arrays should be empty here: ', year, boys, girls);
+// Have to remove and add a new canvas not to get multiple canvas generated
+// on top of eachother
+function resetCanvas() {
+  $('#lineChart').remove();
+  $('.line-chart-container').append('<canvas id="lineChart"><canvas>');
+  canvas = document.querySelector('#lineChart');
+  ctx = canvas.getContext('2d');
 }
 
 function syncGraph(id) {
@@ -50,14 +55,6 @@ function syncGraph(id) {
     loadData(() => {
       drawLineChart();
     }, path);
-  } else if (id == 13) {
-    console.log('Updating graph with data from ', id);
-
-    emptyArray();
-
-    loadData(() => {
-      drawLineChart();
-    });
   }
 }
 
