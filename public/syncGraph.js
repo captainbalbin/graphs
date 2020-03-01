@@ -2,6 +2,18 @@ var year = [],
   boys = [],
   girls = [];
 
+/* with d3 v5 should be used like this, but is not working */
+// function loadCSV() {
+//   d3.csv('data/riket.csv').then(function(data) {
+//     data.forEach(function(d) {
+//       d.year = +d.year;
+//       d.boys = +d.boys;
+//       d.girls = +d.girls;
+//     });
+//     setArrays();
+//   });
+// }
+
 function loadData(callback, path) {
   console.log('loading data into graph');
 

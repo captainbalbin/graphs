@@ -8,7 +8,7 @@ var lineChart;
 var path = 'data/riket.csv';
 var countyLabel = 'National Rate';
 
-//load the arrays with data
+// load the arrays with data
 loadData(() => {
   drawLineChart();
 }, path);
