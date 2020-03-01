@@ -44,7 +44,7 @@ function resetLineChartCanvas() {
   $('#lineChart').remove();
   $('#line-chart-container').append('<canvas id="lineChart"><canvas>');
   canvas = document.querySelector('#lineChart');
-  ctx = canvas.getContext('2d');
+  line = canvas.getContext('2d');
 }
 
 function syncGraph(id) {

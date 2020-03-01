@@ -12,7 +12,21 @@ new Chart(document.getElementById('pieChart'), {
     ]
   },
   options: {
+    label: {
+      display: true
+    },
     tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+          var dataset = data['datasets'][0];
+          var percent = Math.round(
+            (dataset['data'][tooltipItem['index']] /
+              dataset['_meta'][0]['total']) *
+              100
+          );
+          return percent + '%';
+        }
+      },
       backgroundColor: '#fff',
       titleFontColor: '#555',
       bodyFontColor: '#555'

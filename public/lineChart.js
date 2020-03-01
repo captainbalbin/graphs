@@ -1,4 +1,4 @@
-var ctx = document.getElementById('lineChart').getContext('2d');
+var line = document.getElementById('lineChart').getContext('2d');
 
 var boysData = [];
 var girlsData = [];
@@ -14,7 +14,7 @@ loadData(() => {
 }, path);
 
 function drawLineChart() {
-  new Chart(ctx, {
+  new Chart(line, {
     type: 'line',
     data: {
       labels: getYears(),

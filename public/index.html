@@ -41,6 +41,7 @@
   </header>
   <body>
     <div class="column">
+      <!-- Crowd and pie chart -->
       <div class="row" id="top-container">
         <div id="people-graphics-image">
           <img src="./img/people_grahpics.svg" />
@@ -51,10 +52,17 @@
         </div>
       </div>
 
-      <!-- row 2 -->
+      <!-- Headline text -->
+      <div class="header-text-div">
+        <h1>In 2018, 171 youths committed suicide in Sweden.</h1>
+        <h1>62% of them were boys.</h1>
+      </div>
+
+      <!-- Map and line chart -->
       <div class="row" id="middle-container">
         <div id="map-chart-container">
           <script type="text/javascript" src="map.js"></script>
+          <p>Youth suicide rates per 100,000</p>
         </div>
         <div id="button-container">
           <button onclick="syncGraph(0), setLabel(0)" id="sweden-button">
@@ -65,13 +73,72 @@
         <div id="line-chart-container">
           <canvas id="lineChart"></canvas>
           <script src="lineChart.js"></script>
+          <p>Youth suicide rates per 100,000</p>
+        </div>
+      </div>
+
+      <!-- Difference Text -->
+      <div class="header-text-div">
+        <h1>Why the big difference between boys and girls.</h1>
+        <div id="difference-text">
+          <p>
+            Girls are more likely to attempt suicide, while boys have higher
+            rates of lethality. <a href="">source</a>
+          </p>
+          <p>
+            “Men tend to choose more violent and immediately lethal means, which
+            increases their likelihood of dying. Women tend to choose less
+            lethal means, which increases their chance of survival.”
+            <a href="">source</a>
+          </p>
+          <p>
+            “Men may also choose these methods because they’re more intent on
+            completing the act.” <a href="">source</a>
+          </p>
+          <p>
+            “Teenage boys are less likely to talk about suicide before
+            committing the act. Boys often keep their feelings to themselves and
+            also commit suicide more often.” <a href="">source</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Warning signs -->
+      <div class="header-text-div">
+        <h1>Suicde warning signs</h1>
+        <div class="row">
+          <div class="column" id="eating">
+            <p>Text here. also add image</p>
+          </div>
+          <div class="column" id="conversation">
+            <p>Text here. also add image</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column" id="harming">
+            <p>Text here. also add image</p>
+          </div>
+          <div class="column" id="abuse">
+            <p>Text here. also add image</p>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- <div class="donut-chart-container">
-      <canvas id="donutChart"></canvas>
-      <script src="donutChart.js"></script>
-    </div> -->
+    <!-- Donut chart and text -->
+    <div class="row">
+      <div class="column">
+        <div id="donut-chart-container">
+          <canvas id="donutChart"></canvas>
+          <script src="donutChart.js"></script>
+        </div>
+      </div>
+      <div class="column">
+        <h1>
+          of people in Sweden says they have had suicical thoughts at some point
+          in there life
+        </h1>
+      </div>
+    </div>
   </body>
 </html>
