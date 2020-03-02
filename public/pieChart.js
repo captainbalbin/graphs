@@ -1,13 +1,13 @@
 new Chart(document.getElementById('pieChart'), {
   type: 'pie',
   data: {
-    labels: ['Boys', 'Girls'],
+    labels: ['Girls', 'Boys'],
     datasets: [
       {
         label: 'Suicides (per 100 000)',
-        backgroundColor: ['#7DAFC2', '#C087A2'],
+        backgroundColor: ['#C087A2', '#7DAFC2'],
         borderColor: '#FFF',
-        data: [12, 7.38]
+        data: [7.38, 12]
       }
     ]
   },

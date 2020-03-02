@@ -69,12 +69,14 @@ button:active {
 .header-text-div {
   display: flex;
   flex-direction: column;
-
+  line-height: 0.3;
   text-align: center;
+  margin: 32px 0;
 }
 #difference-text {
   width: 30%;
   margin: 0 auto;
+  line-height: 1.2;
 }
 
 #top-container {
@@ -82,8 +84,14 @@ button:active {
   margin-bottom: 50px;
 }
 
+#middle-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 #map-chart-container {
-  width: 40%;
+  width: 20%;
   height: 500px;
 }
 
@@ -91,10 +99,12 @@ button:active {
   display: flex;
   align-items: center;
   width: 10%;
+  margin-right: 32px;
 }
 
 #line-chart-container {
   width: 50%;
+  height: 500px;
 }
 
 #pie-chart-container {
@@ -105,5 +115,20 @@ button:active {
 #donut-chart-container {
   height: 300px;
   width: 300px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  align-self: flex-end;
+  margin-right: 16px;
+}
+
+#thought-container {
+  justify-content: center;
+  margin-left: 16px;
+}
+
+#thoughts {
+  width: 60%;
+}
+
+#hello {
+  margin: 16px 0 48px 0;
 }

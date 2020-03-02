@@ -46,12 +46,19 @@ anychart.onDocumentReady(function() {
   // set geoIdField to 'id', this field contains in geo data meta properties
   series.geoIdField('id');
 
+  var title = map.title();
+  title.enabled(true);
+  title.text('Youth suicide per 100,000');
+  title.fontColor('#555');
+  title.fontWeight(700);
+  title.fontSize(11);
+
   var tooltip = series.tooltip();
   tooltip.fontColor('#333');
 
-  var title = series.tooltip().title();
-  title.fontColor('#333');
-  title.fontWeight(500);
+  var tooltipTitle = series.tooltip().title();
+  tooltipTitle.fontColor('#333');
+  tooltipTitle.fontWeight(500);
 
   // set tooltip
   series.tooltip().format(function(e) {

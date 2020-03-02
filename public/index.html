@@ -62,7 +62,6 @@
       <div class="row" id="middle-container">
         <div id="map-chart-container">
           <script type="text/javascript" src="map.js"></script>
-          <p>Youth suicide rates per 100,000</p>
         </div>
         <div id="button-container">
           <button onclick="syncGraph(0), setLabel(0)" id="sweden-button">
@@ -73,7 +72,6 @@
         <div id="line-chart-container">
           <canvas id="lineChart"></canvas>
           <script src="lineChart.js"></script>
-          <p>Youth suicide rates per 100,000</p>
         </div>
       </div>
 
@@ -126,15 +124,15 @@
     </div>
 
     <!-- Donut chart and text -->
-    <div class="row">
+    <div class="row" id="hello">
       <div class="column">
         <div id="donut-chart-container">
           <canvas id="donutChart"></canvas>
           <script src="donutChart.js"></script>
         </div>
       </div>
-      <div class="column">
-        <h1>
+      <div class="column" id="thought-container">
+        <h1 id="thoughts">
           of people in Sweden says they have had suicical thoughts at some point
           in there life
         </h1>
