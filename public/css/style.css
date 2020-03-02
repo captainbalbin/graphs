@@ -21,10 +21,15 @@ header h3 {
   font-size: 30px;
 }
 
+h1 {
+  margin-top: 64px;
+}
+
 h2 {
   color: #555;
-  font-size: medium;
-  line-height: 0.2;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0;
 }
 
 a {
@@ -110,7 +115,8 @@ button:active {
 }
 
 #top-container {
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -138,8 +144,15 @@ button:active {
 }
 
 #pie-chart-container {
-  height: 300px;
-  width: 300px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+  width: 35%;
+}
+
+#pie-chart-container p {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 #donut-chart-container {
