@@ -12,6 +12,19 @@ header {
   text-align: center;
   background-color: #c087a2;
   margin-bottom: 2%;
+  line-height: 0.4;
+}
+header h1 {
+  font-size: 50px;
+}
+header h3 {
+  font-size: 30px;
+}
+
+h2 {
+  color: #555;
+  font-size: medium;
+  line-height: 0.2;
 }
 
 a {
@@ -64,6 +77,23 @@ button:active {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.shit {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shit p {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.fuck {
+  width: calc(100% / 3);
+  flex: none;
 }
 
 .header-text-div {
@@ -131,4 +161,9 @@ button:active {
 
 #hello {
   margin: 16px 0 48px 0;
+}
+
+#help-texts {
+  align-items: center;
+  justify-content: center;
 }
